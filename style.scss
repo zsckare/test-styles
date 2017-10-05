@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Lato|Open+Sans+Condensed:300');
+
+$primary-blue: #337ab7;
+$secondary-blue: #2e6da4;
+$acent: #1fbad6;
+$darker:#070716;
+
+
+body{
+	font-family: 'Dosis', sans-serif;
+	padding: 0;
+margin: 0;
+max-width: 100%;
+}
+ul{
+	li{
+		list-style: none!important;
+	}
+}
+.banner{
+	width: 100%;
+	height: 70vh;
+	background-color: $primary-blue;
+}
+.content{
+	width: 100%;
+	
+	#principal{
+		width: 100%;
+		
+		.title{
+			text-align: center !important;
+			color: $primary-blue !important;
+		}
+		.subtitle{
+			text-align: center;
+		}
+	}
+	#learn{
+		text-align: center;
+		.title{
+			font-size: 25px;
+			letter-spacing: 2px;
+			color: $secondary-blue;
+			border: 1px solid $primary-blue;
+			padding: 5px 10px;
+			width: 20%;
+			margin: 0 auto;
+			border-radius: 5px;
+			&:hover{
+				cursor: pointer;
+			}
+		}
+
+	}
+	.apps{
+	width: 100%;
+    max-height: 100%;
+    margin-top: 20px;
+    padding: .53em 1.2em;
+    border-top: 1px solid $darker;
+		.app{
+      
+      width: 90%;
+      margin: 0 auto;
+      .title{
+        text-align: center;
+            margin-top: 10px;
+            color: #596072;
+            font-size: 30px;
+            line-height: 50px;
+            margin-bottom: 30px;
+      }
+      .content{
+        width: 100%;
+        max-width: 100;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        .item{
+          float: left;
+          width: 50%;
+          max-height: 100%;
+        }
+        .description{
+        	ul{
+        		li{
+        			margin: 0 0 10px 0;
+        			color: $darker;
+        		}
+        	}
+          p{
+            text-align: justify;
+            color: $darker;
+          }
+          .links{
+            width: 60%;
+            margin: 0 auto;
+            a{
+              float: left;
+              width: 50%;
+              img{
+                max-width: 100%;
+                height: auto;
+              }
+            }
+          }
+        }
+        .layer{
+          position: relative;
+          img{
+             position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              margin: auto;
+                 margin: auto; 
+            max-width: 80%;
+            height: auto;
+            max-height: 430px;
+          }
+        }
+      }
+    }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+.banner-menu{
+	position: absolute;
+	z-index: 9;
+	width: 100%;
+	height: 60px !important;
+	background-color: $primary-blue;
+}
+.brand{
+	a{
+		max-height: 100%;
+	}
+}
+
+
+#menu1{
+	border: 1px solid #fff;
+	background-color: $primary-blue;
+	padding: .4rem 1.2em;
+	border-radius: 5px;
+}
+.sign-up{
+	border: 1px solid #fff;
+	background-color: $primary-blue;
+	padding: .4rem 1.2em;
+	border-radius: 5px;
+}
