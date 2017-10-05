@@ -24,34 +24,34 @@ ul{
 	background-color: $primary-blue;
 }
 .content{
-	width: 90%;
-	margin: 0 auto;
-	max-width: 100%;
+	width: 90% !important;
+	margin: 0 auto !important;
+	max-width: 100% !important;
 	
 	#principal{
-		width: 100%;
+		width: 100% !important;
 		
 		.title{
 			text-align: center !important;
 			color: $primary-blue !important;
 		}
 		.subtitle{
-			text-align: center;
+			text-align: center !important;
 		}
 	}
 	#learn{
-		text-align: center;
+		text-align: center !important;
 		.title{
-			font-size: 25px;
-			letter-spacing: 2px;
-			color: $secondary-blue;
-			border: 1px solid $primary-blue;
-			padding: 5px 10px;
-			width: 20%;
-			margin: 0 auto;
-			border-radius: 5px;
+			font-size: 25px !important;
+			letter-spacing: 2px !important;
+			color: $secondary-blue !important;
+			border: 1px solid $primary-blue !important;
+			padding: 5px 10px !important;
+			width: 20% !important;
+			margin: 0 auto !important;
+			border-radius: 5px !important;
 			&:hover{
-				cursor: pointer;
+				cursor: pointer !important;
 			}
 		}
 
@@ -59,65 +59,65 @@ ul{
 	.apps{
 		.app{
       
-      width: 90%;
-      margin: 0 auto;
+      width: 90% !important;
+      margin: 0 auto !important;
       .title{
-        text-align: center;
-            margin-top: 10px;
-            color: #596072;
-            font-size: 30px;
-            line-height: 50px;
-            margin-bottom: 30px;
+        text-align: center !important;
+            margin-top: 10px !important;
+            color: #596072 !important;
+            font-size: 30px !important;
+            line-height: 50px !important;
+            margin-bottom: 30px !important;
       }
       .content{
-        width: 100%;
-        max-width: 100%;
-        height: 60vh;
-        display: flex;
-        justify-content: center;
-        align-items: center; 
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 60vh !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important; 
         .item{
-          float: left;
-          width: 50%;
-          max-height: 100%;
+          float: left !important;
+          width: 50% !important;
+          max-height: 100% !important;
         }
         .description{
         	ul{
         		li{
-        			margin: 0 0 10px 0;
-        			color: $darker;
+        			margin: 0 0 10px 0 !important;
+        			color: $darker !important;
         		}
         	}
           p{
-            text-align: justify;
-            color: $darker;
+            text-align: justify !important;
+            color: $darker !important;
           }
           .links{
-            width: 60%;
-            margin: 0 auto;
+            width: 60% !important;
+            margin: 0 auto !important;
             a{
-              float: left;
-              width: 50%;
+              float: left !important;
+              width: 50% !important;
               img{
-                max-width: 100%;
-                height: auto;
+                max-width: 100% !important;
+                height: auto !important;
               }
             }
           }
         }
         .layer{
-          position: relative;
+          position: relative !important;
           img{
-             position: absolute;
-              top: 0;
-              right: 0;
-              bottom: 0;
-              left: 0;
-              margin: auto;
-                 margin: auto; 
-            max-width: 80%;
-            height: auto;
-            max-height: 430px;
+             position: absolute !important;
+              top: 0 !important;
+              right: 0 !important;
+              bottom: 0 !important;
+              left: 0 !important;
+              margin: auto !important;
+                 
+            max-width: 80% !important;
+            height: auto !important;
+            max-height: 430px !important;
           }
         }
       }
