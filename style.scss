@@ -9,9 +9,9 @@ $darker:#070716;
 body{
 	font-family: 'Dosis', sans-serif;
 	padding: 0;
-margin: 0;
-max-width: 100%;
-overflow-x: hidden !important;
+	margin: 0;
+	max-width: 100%;
+	overflow-x: hidden !important;
 }
 ul{
 	li{
@@ -23,7 +23,7 @@ ul{
 	height: 70vh;
 	background-color: $primary-blue;
 }
-.content{
+#contenido{
 	width: 90% !important;
 	margin: 0 auto !important;
 	max-width: 100% !important;
@@ -56,8 +56,12 @@ ul{
 		}
 
 	}
-	.apps{
-		.app{
+
+}
+
+
+  #apps{
+    .app{
       
       width: 90% !important;
       margin: 0 auto !important;
@@ -82,12 +86,12 @@ ul{
           max-height: 100% !important;
         }
         .description{
-        	ul{
-        		li{
-        			margin: 0 0 10px 0 !important;
-        			color: $darker !important;
-        		}
-        	}
+          ul{
+            li{
+              margin: 0 0 10px 0 !important;
+              color: $darker !important;
+            }
+          }
           p{
             text-align: justify !important;
             color: $darker !important;
@@ -122,11 +126,7 @@ ul{
         }
       }
     }
-	}
-}
-
-
-
+  }
 
 
 
