@@ -5,12 +5,16 @@ $secondary-blue: #2e6da4;
 $acent: #1fbad6;
 $darker:#070716;
 
+$breakpoints: (phone: 640px, 
+               tablet: 768px, 
+               desktop: 1024px) !default;
+$white: #fff;
 
 body{
-	font-family: 'Dosis', sans-serif;
-	padding: 0;
-	margin: 0;
-	max-width: 100%;
+	font-family: 'Dosis', sans-serif !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	max-width: 100% !important;
 	overflow-x: hidden !important;
 }
 ul{
@@ -18,10 +22,27 @@ ul{
 		list-style: none!important;
 	}
 }
+
+#mobile-nav{
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100%;
+  height: 3em;
+  background-color: $primary-blue !important;
+  color: #fff !important;
+  display: table;
+  .title{
+    text-align: center;
+    color: $white;
+    display: table-cell; vertical-align: middle;
+    font-size: 18px;
+  }
+}
 .banner{
 	width: 100%;
 	height: 70vh;
-	background-color: $primary-blue;
+	background-color: $darker;
 }
 #contenido{
 	width: 90% !important;
@@ -31,13 +52,16 @@ ul{
 	#principal{
 		width: 100% !important;
 		
-		.title{
-			text-align: center !important;
-			color: $primary-blue !important;
-		}
-		.subtitle{
-			text-align: center !important;
-		}
+		.content{
+      .title{
+      text-align: center !important;
+      color: $primary-blue !important;
+      font-size: 40px !important;
+    }
+    .subtitle{
+      text-align: center !important;
+    }
+    }
 	}
 	#learn{
 		text-align: center !important;
@@ -61,10 +85,12 @@ ul{
 
 
   #apps{
+
     .app{
       
       width: 90% !important;
       margin: 0 auto !important;
+      border-bottom: 1px solid #ccc;
       .title{
         text-align: center !important;
             margin-top: 10px !important;
@@ -128,8 +154,98 @@ ul{
     }
   }
 
+.hide-in-desktop{
+  display: none !important;
+}
+@media only screen and (max-width:800px) {
+  .responsive{
+    max-width: 80%;
+    margin: 0 auto !important;
+  }
+ .banner{
+  display: none;
+ } 
+ .hide-in-desktop{
+  display: block !important;
+ }
 
+ #contenido{
+  width: 100% !important;
+  #principal{
+    display: table;
+    height: 70vh !important;
+    margin-top: 3em !important;
+    .content{
+      display: table-cell;
+      vertical-align: middle;
+       .title{
+      font-size: 30px !important;
+      
+    }
+    .subtitle{
+      font-size: 16px !important;
+      margin-top: 10px !important;
+      
+    }
+    }
+  }
+  #learn{
+    .title{
+      margin-top: 10px !important;
+      width: 80% !important;
+      font-size: 16px !important;
+    }
+  }
+  #apps{
+    width: 100%;
+    height: auto !important;
+    min-height: 100vh !important;
 
+    .app{
+      height: auto !important;
+      width: 100% !important;
+      .content{
+        height: auto !important;
+        .item{
+          height:  auto !important;
+          width: 95% !important;
+          margin:  0 auto !important;
+          max-height: auto !important; 
+        }
+        .layer{
+          display: none !important;
+        }
+      }
+    }
+    .client{
+      background-color: $primary-blue !important;
+      color: $white !important;
+      .title{
+        color: $white !important;
+
+      }
+      .content{
+        height: auto !important; 
+
+        .item{
+          width: 95% !important;
+          margin:  0 auto !important;
+          max-height: auto !important;
+          ul{
+            li{
+              color: $white !important;
+            }
+          }
+        }
+        .layer{
+          display: none !important;
+        }
+      }
+    }
+  }
+  
+ }
+}
 
 
 
@@ -156,8 +272,8 @@ ul{
 	border-radius: 5px;
 }
 .sign-up{
-	border: 1px solid #fff;
-	background-color: $primary-blue;
-	padding: .4rem 1.2em;
-	border-radius: 5px;
+	border: 1px solid #fff !important;
+	background-color: $primary-blue !important;
+	padding: .4rem 1.2em !important; 
+	border-radius: 5px !important;
 }
