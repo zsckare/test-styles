@@ -167,7 +167,9 @@ ul{
   display: none !important;
 }
 @media only screen and (max-width:800px) {
- 
+ .banner-menu{
+  display: none !important;
+ }
   .responsive{
     max-width: 80%;
     margin: 0 auto !important;
