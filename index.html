@@ -7,10 +7,27 @@
 </head>
 <body>
 	<div class="banner"></div>
-<div id="mobile-nav">
+<div id="mobile-nav" class="hide-in-desktop">
+	
+
 	<div class="title">
-		AlianzaGO
+		<div class="text">AlianzaGO</div>
 	</div>
+	<input type="checkbox" id="hamburger"/>
+<label class="menuicon" for="hamburger">
+  <span></span>
+</label>
+
+</div>
+<div class="menu" style="display: none;">
+	<ul>
+		<li>
+			<a href="/login">Ingresar</a>
+		</li>
+		<li>
+			<a href="/signup">Registrarse</a>
+		</li>
+	</ul>
 </div>
 	<div id="contenido">
 		<div id="principal">
@@ -70,13 +87,13 @@
 						</span>
 							</li>
 							<li>
-								<img src="https://www.nobly.com/wp-content/uploads/2015/12/screens-layered.png" alt="" class="responsive hide-in-desktop">
+								<img src="http://res.cloudinary.com/dttuj6iv1/image/upload/v1508167836/avatars/m3l3mzggxgtdgc6dhsyd.png" alt="" class="responsive hide-in-desktop">
 							</li>
 						</ul>
 		          </div>
 		          
 		          <div class=" item layer" id="particles-js">
-		            <img src="https://www.nobly.com/wp-content/uploads/2015/12/screens-layered.png" alt="">
+		            <img src="http://res.cloudinary.com/dttuj6iv1/image/upload/v1508167836/avatars/m3l3mzggxgtdgc6dhsyd.png" alt="">
 		          </div>
 		        </div>
 			</div>
@@ -86,7 +103,7 @@
 				<div class="title">APP CONDUCTOR</div>
 				<div class="content">
 					<div class="item layer">
-						<img src="https://www.nobly.com/wp-content/uploads/2015/12/screens-layered.png" alt="">
+						<img src="http://res.cloudinary.com/dttuj6iv1/image/upload/v1508167836/avatars/m3l3mzggxgtdgc6dhsyd.png" alt="">
 					</div>
 					<div class="item description">
 						<ul>
@@ -107,7 +124,7 @@
 						ingresos de tu vehículo.
 							</li>
 							<li>
-								<img src="https://www.nobly.com/wp-content/uploads/2015/12/screens-layered.png" alt="" class="responsive hide-in-desktop">
+								<img src="http://res.cloudinary.com/dttuj6iv1/image/upload/v1508167836/avatars/m3l3mzggxgtdgc6dhsyd.png" alt="" class="responsive hide-in-desktop">
 							</li>
 						</ul>
 					</div>
@@ -115,5 +132,12 @@
 			</div>
 		</div>
 	</div>
+
+	<script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script>
+		$(".menuicon").click(function () {
+			$(".menu").toggle();
+		});
+	</script>
 </body>
 </html>
